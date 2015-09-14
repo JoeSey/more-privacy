@@ -10,17 +10,17 @@ Early development version, beware. Things might break.
 
 ## Configuration:
 
-![configuration screenshot](http://raw.github.com/JSey/more-privacy/configuration.png)
+![configuration screenshot](https://github.com/JSey/more-privacy/blob/master/settings.png?raw=true)
 
 ## How it looks:
 
 When looking at a profile page without being logged in:
 
-![profile page viewed from anon account](http://raw.github.com/JSey/more-privacy/anonymous.png)
+![profile page viewed from anon account](https://github.com/JSey/more-privacy/blob/master/anonymous.png?raw=true)
 
 When looking at a profile page after logging in:
 
-![full profile page](http://raw.github.com/JSey/more-privacy/authenticated.png)
+![full profile page](https://github.com/JSey/more-privacy/blob/master/authenticated.png?raw=true)
 
 ## ToDo
 - add settings for both anonymous and authenticated users
