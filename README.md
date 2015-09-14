@@ -6,7 +6,7 @@ Early development version, beware. Things might break.
 
 ## Installation:
 - follow [these steps](https://meta.discourse.org/t/install-a-plugin/19157).
-- or, ssh into your Docker container. ```cd /var/www/discourse/plugins; git clone https://github.com/JSey/more-privacy``` and then do a ```RAILS_ENV=production rake assets:precompile&& sv restart unicorn```
+- or, ssh into your Docker container. Do a ```cd /var/www/discourse/plugins; git clone https://github.com/JSey/more-privacy``` and next, ```RAILS_ENV=production rake assets:precompile&& sv restart unicorn``` (on a production install. On development, you know the drill...)
 
 ## Configuration:
 
