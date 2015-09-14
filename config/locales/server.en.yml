@@ -1,0 +1,8 @@
+# MorePrivacy
+
+en:
+  site_settings:
+    more_privacy_enabled: "Enable More Privacy plugin"
+    more_privacy_show_last_seen: "Show &ldquo;last seen&rdquo; date publicly in user profiles"
+    more_privacy_show_last_posted: "Show &ldquo;last posted&rdquo; publicly in user profiles"
+    more_privacy_show_created_at: "Show &ldquo;account creation date&rdquo; publicly in user profiles"

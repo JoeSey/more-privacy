@@ -1,0 +1,15 @@
+# MorePrivacy
+
+plugins:
+  more_privacy_enabled:
+    default: true
+    client: true
+  more_privacy_show_last_seen:
+    default: false
+    client: true
+  more_privacy_show_last_posted:
+    default: true
+    client: true
+  more_privacy_show_created_at:
+    default: false
+    client: true
