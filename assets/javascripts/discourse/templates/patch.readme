@@ -1,0 +1,7 @@
+The patch file in this directory has been created from this dir using these command lines:
+
+diff -u ../../../../../../app/assets/javascripts/discourse/templates/user/user.hbs user/user.hbs > patch
+diff -u ../../../../../../app/assets/javascripts/discourse/templates/user-card.hbs user-card.hbs >> patch
+
+This can be used to patch the hbs in case the original discourse file has been changed. Re-apply patch
+with -p11.

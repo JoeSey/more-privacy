@@ -1,0 +1,33 @@
+--- ../../../../../../app/assets/javascripts/discourse/templates/user/user.hbs	2015-09-14 18:33:29.000000000 +0200
++++ user/user.hbs	2015-09-14 19:32:57.000000000 +0200
+@@ -112,13 +112,13 @@
+       <div class='secondary'>
+         <dl>
+           {{#if model.created_at}}
+-            <dt>{{i18n 'user.created'}}</dt><dd>{{bound-date model.created_at}}</dd>
++            {{#if model.show_created_at}}<dt>{{i18n 'user.created'}}</dt><dd>{{bound-date model.created_at}}</dd>{{/if}}
+           {{/if}}
+           {{#if model.last_posted_at}}
+-            <dt>{{i18n 'user.last_posted'}}</dt><dd>{{bound-date model.last_posted_at}}</dd>
++            {{#if model.show_last_posted_at}}<dt>{{i18n 'user.last_posted'}}</dt><dd>{{bound-date model.last_posted_at}}</dd>{{/if}}
+           {{/if}}
+           {{#if model.last_seen_at}}
+-            <dt>{{i18n 'user.last_seen'}}</dt><dd>{{bound-date model.last_seen_at}}</dd>
++            {{#if model.show_last_seen_at}}<dt>{{i18n 'user.last_seen'}}</dt><dd>{{bound-date model.last_seen_at}}</dd>{{/if}}
+           {{/if}}
+           {{#if model.invited_by}}
+             <dt>{{i18n 'user.invited_by'}}</dt><dd>{{#link-to 'user' model.invited_by}}{{model.invited_by.username}}{{/link-to}}</dd>
+--- ../../../../../../app/assets/javascripts/discourse/templates/user-card.hbs	2015-09-14 18:33:29.000000000 +0200
++++ user-card.hbs	2015-09-15 19:12:06.000000000 +0200
+@@ -58,9 +58,9 @@
+   {{#if user}}
+     <div class="metadata">
+       {{#if user.last_posted_at}}
+-        <h3><span class='desc'>{{i18n 'last_post'}}</span> {{format-date user.last_posted_at leaveAgo="true"}}</h3>
++        {{#if user.show_last_posted_at}}<h3><span class='desc'>{{i18n 'last_post'}}</span> {{format-date user.last_posted_at leaveAgo="true"}}</h3>{{/if}}
+       {{/if}}
+-      <h3><span class='desc'>{{i18n 'joined'}}</span> {{format-date user.created_at leaveAgo="true"}}</h3>
++      {{#if user.show_created_at}}<h3><span class='desc'>{{i18n 'joined'}}</span> {{format-date user.created_at leaveAgo="true"}}</h3>{{/if}}
+       {{plugin-outlet "user-card-metadata"}}
+     </div>
+   {{/if}}
