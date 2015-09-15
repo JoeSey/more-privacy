@@ -24,5 +24,5 @@ When looking at a profile page after logging in:
 
 ## ToDo
 - add settings for both anonymous and authenticated users
-- add support to suppress info on the user cards
+- ~~add support to suppress info on the user cards~~
 - make the .hbs approach more stable than including the full user/users.hbs file
