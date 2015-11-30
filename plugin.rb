@@ -1,6 +1,6 @@
 # name: more-privacy
 # about: Hide some information from Discourse user profiles
-# version: 0.0.2
+# version: 0.0.3
 # authors: Joerg Seyfried (JSey)
 # url: https://github.com/JSey/more-privacy
 
